@@ -1,0 +1,76 @@
+body{
+    background-color: beige;
+    background-image: url(images/web_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed ;
+    background-size: cover;
+
+}
+h1{
+    text-shadow: 3px 3px  3px orangered ,-3px -5px  3px  yellow;
+    font-family: cursive;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+} 
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid red;
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px black;
+    margin: 5%;
+    padding: 5%;
+}
+#img1{
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 50%;
+
+}
+
+
+img{
+    height: 100px;
+    width:  100px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.box{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.box1{
+    background-color: blueviolet;
+     height: 52px;
+    width: 60px;
+     border: 2px solid black;
+    border-radius: 10px;
+
+  
+}
+.box2{
+    background-color: red;
+    height: 52px;
+    width: 60px;
+     border: 2px solid black;
+    border-radius: 10px;
+
+  
+
+}
