@@ -212,26 +212,98 @@ li:not(:hover){
     border: 2px solid hsla(0, 0%, 50%, 0.71);
     border-radius: 15px;
     gap: 3px;
+    font-size: 1.4em;
+    
 
 }
 #box1{
     background-color: green;
     padding: 25px;
     border-radius: 15px;
+    transform: rotatez(45deg);
+    
+    
 }
 #box2{
     background-color:hsl(300, 51%, 40%) ;
     padding: 25px;
     border-radius: 15px;
+    transform: rotatez(45deg);
+    
+    
 }
 #box3{
     background-color: #00ddff;
     padding: 25px;
     border-radius: 15px;
+    transform: rotatez(45deg);
+    
 }
 #box4{
     background-color: hsla(0, 89%, 41%, 0.888);
     padding: 25px;
     border-radius: 15px;
-    
+    /* tranform property in css is here */
+    transform: translatey(-20%);
+    transform: rotatez(-45deg);
+    /* for all of it in one line we could also use this shiii */
+    transform: translatex(100%) rotatez(45deg) scalex(1.8) ;
+ 
+}
+.imgtranformations{
+    height: 100%;
+    margin-top: 20%;
+    border: 2px solid;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    transform: translatex(0px) rotatez(45deg) scale(1);
+}
+.animations{
+    background-color: hsla(0, 1%, 30%, 0.781);
+    border: none;
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top:20%;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);/*ease in out is the default one you could change it too*/
+}
+/* animations starts form here: */
+@keyframes slideup{
+    from{transform : translatey(100%)}
+}
+@keyframes slidedown{
+    from{transform : translatey(-100%)}
+}
+@keyframes rotate{
+    100%{transform:rotatey(360deg);}
+}
+@keyframes rotate{
+    100%{transform:rotatex(360deg);}
+}
+@keyframes rotate{
+    100%{transform:rotatez(360deg);}
+}
+@keyframes grow{
+    5%{transform: scale(2,2)}
+}
+@keyframes shrink{
+    5%{transform: scale(-2.1,-2.1)}
+}
+@keyframes shrinkexactly{
+    50%{transform: scale(0.5,0.5)}
+}
+@keyframes glow{
+    100%{box-shadow: 0px 0px 50px navy;}
+}
+.animations:hover{
+   animation-name: glow;
+   animation-duration: 2s;
 }
